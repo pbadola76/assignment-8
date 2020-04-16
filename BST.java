@@ -133,7 +133,7 @@ public class BST<T extends Comparable<T>>
                 }
                 else 
                 {
-                    Node<T> small = remove(node);
+                    Node<T> small = removeSmallest(node);
                     node = small;
                     node = delete(node.right, item);
                 }
